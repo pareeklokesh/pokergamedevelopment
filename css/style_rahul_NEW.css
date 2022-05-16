@@ -1034,7 +1034,6 @@ body * {
     background-attachment: scroll;
     background-size: auto;
   background-size: cover !important;
-  background-attachment: fixed !important;
   position: relative;
 }
 .why_choose::before {
@@ -1087,7 +1086,7 @@ margin-bottom: 0 !important;
 }
 .faq .card .collapse {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .faq .card .collapse::after {
   content: "";
@@ -1096,7 +1095,7 @@ margin-bottom: 0 !important;
   height: 1px;
   background: #2f2f2f;
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
 }
 .whychoose-list-new li strong {
   background: #aa0019;
