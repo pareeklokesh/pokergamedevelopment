@@ -1163,7 +1163,15 @@ margin-bottom: 0 !important;
 .whychoose-list-new {
   padding-left: 0;
 }
-
+.banner.banner-home .col-lg-6.col2 {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+}
+.banner.banner-home {
+  position: relative;
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
   .platform .features-content {
@@ -1173,4 +1181,9 @@ margin-bottom: 0 !important;
 .whychoose-list-new li {
   width: 100%;
 }
+.banner.banner-home .col-lg-6.col2 {
+  display: none;
 }
+}
+
+
