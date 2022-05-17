@@ -1166,11 +1166,15 @@ margin-bottom: 0 !important;
 .banner.banner-home .col-lg-6.col2 {
   position: absolute;
   right: -15px;
-  bottom: 0;
+  bottom: 138px;
 }
 .banner.banner-home {
   position: relative;
   overflow: hidden;
+}
+.banner.banner-home .col-lg-6.col2 img {
+  width: 550px;
+  float: right;
 }
 
 @media (max-width: 768px) {
