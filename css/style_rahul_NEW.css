@@ -97,7 +97,7 @@ header .navbar .collapse ul li button:hover{
 
 /*********************banner css***********************/
 .banner{
-  background: url(../images/banner_bg.png);
+  background: url(../images/banner_bg.avif);
   height: 77vh;
   background-size: cover;
 }
@@ -1014,10 +1014,10 @@ body * {
   margin-bottom: 15px;
 }
 .why_choose {
-  background: url(../images/whychoose.jpg) !important;
+  background: url(../images/whychoose.avif) !important;
 }
 .why_choose {
-  background: url(../images/whychoose.jpg) no-repeat !important;
+  background: url(../images/whychoose.avif) no-repeat !important;
     background-attachment: scroll;
     background-size: auto;
   background-size: cover !important;
@@ -1150,19 +1150,60 @@ margin-bottom: 0 !important;
 .whychoose-list-new {
   padding-left: 0;
 }
-/*.banner.banner-home .col-lg-6.col2 {
-  position: absolute;
-  right: -15px;
-  bottom: 138px;
+.socialicon .col1 i {
+  width: 90px !important;
+  display: block;
 }
-.banner.banner-home {
+.socialicon .col1 i {
   position: relative;
-  overflow: hidden;
 }
-.banner.banner-home .col-lg-6.col2 img {
-  width: 550px;
-  float: right;
-}*/
+.socialicon .col1 i::before, .fllowonus i::before {
+  content: "";
+  display: block;
+width: 42px;
+height: 42px;
+position: absolute;
+top: 0;
+left: 0;
+background: url('../images/icon.png') no-repeat;
+left: 0;
+right: 0;
+margin: 0px auto;
+top: 23%;
+bottom: 0;
+background-position: 7px -4px;
+}
+.socialicon .contact_column:nth-child(2) .col1 i::before {
+background-position: -92px 3px;
+}
+.socialicon.socialicon2 .col1 i::before {
+background-position: -236px 0px;
+height: 45px; 
+}
+.socialicon.socialicon2 .contact_column:nth-child(2) .col1 i::before {
+background-position: -44px 3px; 
+}
+.fllowonus i {
+  width: 40px !important;
+  display: inline-block;
+  position: relative;
+}
+.fllowonus i::before {
+  width: 20px;
+height: 28px;
+background-position: -140px -9px;
+}
+.fllowonus i:nth-child(3)::before {
+background-position: -216px -6px;
+}
+.fllowonus i:nth-child(4)::before {
+background-position: -192px -6px;
+}
+.fllowonus i:nth-child(5)::before {
+background-position: -161px -9px;
+width: 24px;
+}
+
 
 @media (max-width: 768px) {
   .platform .features-content {
