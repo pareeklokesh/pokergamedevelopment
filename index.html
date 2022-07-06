@@ -445,7 +445,7 @@ Multi Table pre-scheduled tournaments where prize pool can be fixed or variable.
             <div class="item">
               <div class="row">
                 <div class="col-md-6 col1">
-            <img src="images/back_office1.avif" alt="Poker Game Developer">
+            <img class="lazy" src="https://www.pokergamedevelopment.com/images/back_office1.avif" alt="Poker Game Developer">
           </div>
                 <div class="col-md-6 col1">
             <div class="content">
@@ -473,7 +473,7 @@ Multi Table pre-scheduled tournaments where prize pool can be fixed or variable.
             <div class="item">
               <div class="row">
                 <div class="col-md-6 col1">
-            <img src="images/back_office2.avif" alt="Poker Software Provider">
+            <img class="lazy" src="https://www.pokergamedevelopment.com/images/back_office2.avif" alt="Poker Software Provider">
           </div>
           <div class="col-md-6 col1">
             <div class="content">
@@ -501,7 +501,7 @@ Multi Table pre-scheduled tournaments where prize pool can be fixed or variable.
             <div class="item">
               <div class="row">
                 <div class="col-md-6 col1">
-            <img src="images/back_office3.avif" alt="Buy Poker Software">
+            <img class="lazy" src="https://www.pokergamedevelopment.com/images/back_office3.avif" alt="Buy Poker Software">
           </div>
                 <div class="col-md-6 col1">
             <div class="content">
@@ -912,7 +912,7 @@ or Software Updates. We take care of all these.</p>
         </p>
 
         <div class="icon_fixed">
-            <a href="https://api.whatsapp.com/send?phone=+919116005595" class="float" target="_blank"><i class="fab fa-whatsapp whatsapp_fixed"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+919116005595" class="float" target="_blank"><i class="fab fa-whatsapp whatsapp_fixed"><img src="images/what.png" /></i></a>
             
         </div>
     </footer>
@@ -1209,6 +1209,38 @@ if ($(this).scrollTop() > 1){
                 }
               })
             });
+          </script>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+  
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
           </script>
 
 </body>
