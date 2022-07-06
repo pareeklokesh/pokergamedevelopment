@@ -1171,6 +1171,8 @@ var $zoho= $zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:'36adf351164
     </script>
 <script>
   $(document).ready(function(){
+    document.addEventListener('touchstart', onTouchStart, {passive: true});
+
   $(window).scroll(function() {
 if ($(this).scrollTop() > 1){  
     $('#id_header').addClass("stickyadd");
